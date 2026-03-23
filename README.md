@@ -136,7 +136,7 @@ useEffect(() => {
           }
       }
 
-      dispatch(setTableFilter(conn, type)); // dispatching the action
+      dispatch(setTableFilter(gender, age)); // dispatching the action
 
       // 5. Provide Feedback to AI
       const results = tableDataRef.current?.data?.slice(0, 3).map(d =>{
